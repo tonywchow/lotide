@@ -8,21 +8,30 @@ const assertEqual = function(actual, expected) {
 };
 
 const countOnly = function(allItems, itemsToCount) {
-  let keys = Object.keys(itemsToCount);
-  let arr = [];
-  let final = [];
-  for (let i = 0; i < allItems.length; i++) {
-    for (let j = 0; j < keys.length; j++) {
-      if(allItems[i] === keys[j] && itemsToCount[allItems[i]] === true) {
-        arr.push(keys[j]);
-      }
-    }
+  // let keys = Object.keys(itemsToCount);
+  // let final = {};
+  // for (let i = 0; i < allItems.length; i++) {
+  //   for (let j = 0; j < keys.length; j++) {
+  //     if(allItems[i] === keys[j] && itemsToCount[allItems[i]] === true) {
+  //       if (final[keys[j]] === undefined) {
+  //         final[keys[j]] = 1
+  //       } else {
+  //         final[keys[j]] += 1;
+  //       }
+  //     }
+  //   }
+  // }
+  
+  // return final;
+  const result = {};
+  for (const item of allItems) {
+    console.log(item)
+    if (itemsToCount[item]) {
+      result[item] = (result[item] || 0) + 1
+    } 
   }
-  arr.forEach(element => {final[element] = (final[element] || 0) + 1;})
-  return final;
+  return result
 }
-
-
 
 const firstNames = [
   "Karl",
