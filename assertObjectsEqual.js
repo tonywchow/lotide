@@ -27,9 +27,9 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   console.log(`Example label: ${inspect(actual)}`)
   if (eqObjects(actual, expected)) {
-    console.log('Objects are identical');
+    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${(expected)}`);
   } else {
-    console.log('Objects are not identical')
+    console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${(expected)}`);
   }
 };
 
