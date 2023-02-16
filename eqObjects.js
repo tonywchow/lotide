@@ -1,23 +1,23 @@
-//`
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-} 
+// //`
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// } 
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
   
 const eqObjects = function(object1, object2) {
   let keys1 = Object.keys(object1);
@@ -42,6 +42,7 @@ const eqObjects = function(object1, object2) {
   return results;
 }
 
+module.exports = eqObjects;
 
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
@@ -50,10 +51,3 @@ console.log(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject)); /
 
 const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 console.log(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject)); // => false
-
-// } else if (typeof object1[keys1[i]] === 'array' && typeof typeof object2[keys2[i]] && object1[keys1[i]].length === object2[keys2[i]].length) {
-//   for (let j = 0; j < object1[keys1[i]]; j++) {
-//     if (object1[keys1[i]][j] !== object2[keys2[i]][j]) {
-//       results = false;
-//     }
-//   }

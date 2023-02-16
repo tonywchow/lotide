@@ -23,14 +23,15 @@ const eqObjects = function(object1, object2) {
   return results;
 }
 
-const assertObjectsEqual = function(actual, expected) {
-  const inspect = require('util').inspect;
-  console.log(`Example label: ${inspect(actual)}`)
-  if (eqObjects(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${(expected)}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${(expected)}`);
-  }
-};
+module.exports = eqObjects;
+// const assertObjectsEqual = function(actual, expected) {
+//   const inspect = require('util').inspect;
+//   console.log(`Example label: ${inspect(actual)}`)
+//   if (eqObjects(actual, expected)) {
+//     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${(expected)}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${(expected)}`);
+//   }
+// };
 
-console.log(assertObjectsEqual({a: 1, b: 2},{a: 1, b: 2}))
+// console.log(assertObjectsEqual({a: 1, b: 2},{a: 1, b: 2}))
