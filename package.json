@@ -1,6 +1,6 @@
 {
   "name": "@pricklytone/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The lotide project is inspired by the Lodash project, which is a utility library for Javascript",
   "main": "index.js",
   "directories": {
