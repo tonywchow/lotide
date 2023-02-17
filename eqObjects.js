@@ -1,6 +1,7 @@
+const eqArrays = require('./eqArrays');
 const eqObjects = function(object1, object2) {
-  let keys1 = Object.keys(object1);
-  let keys2 = Object.keys(object2);
+  let keys1 = Object.keys(object1);//Keys for Object 1
+  let keys2 = Object.keys(object2);//Keys for Object 2
   let results = true;
   if (keys1.length !== keys2.length) { //Checks length
     return false;
@@ -11,7 +12,7 @@ const eqObjects = function(object1, object2) {
     }
     if (Array.isArray(object1[keys1[i]]) && Array.isArray(object2[keys1[i]])) { // checks if the keys are an array
       if (eqArrays(object1[keys1[i]], object2[keys1[i]]) !== true) {
-        return false
+        return false;
       }
     
     } else if (object1[keys1[i]] !== object2[keys1[i]]) {
@@ -19,11 +20,11 @@ const eqObjects = function(object1, object2) {
     }
   }
   return results;
-}
+};
 
 module.exports = eqObjects;
 
-
+//Below are the test cases:
 // const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 // const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 // console.log(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject)); // => true

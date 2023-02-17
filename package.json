@@ -1,0 +1,27 @@
+{
+  "name": "@pricklytone/lotide",
+  "version": "1.0.0",
+  "description": "The lotide project is inspired by the Lodash project, which is a utility library for Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonywchow/lotide.git"
+  },
+  "keywords": [],
+  "author": "pricklytone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonywchow/lotide/issues"
+  },
+  "homepage": "https://github.com/tonywchow/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}

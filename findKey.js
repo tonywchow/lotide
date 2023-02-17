@@ -1,7 +1,7 @@
 const findKey = (object, callback) => {
-  for (let item in object) {
+  for (let item in object) {//loops through the object
     let firstOb = object[item];
-    if (callback(firstOb)) {
+    if (callback(firstOb)) {//is callback function returns true then return item
       return item;
     }
   }
@@ -9,7 +9,7 @@ const findKey = (object, callback) => {
 
 module.exports = findKey;
 
-
+//Below are the test cases:""
 // console.log(findKey({
 //   "Blue Hill": { stars: 1 },
 //   "Akaleri":   { stars: 3 },

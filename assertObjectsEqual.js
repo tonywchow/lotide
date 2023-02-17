@@ -1,5 +1,4 @@
-
-
+const eqArrays = require('./eqArrays');
 const eqObjects = function(object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
@@ -13,7 +12,7 @@ const eqObjects = function(object1, object2) {
     }
     if (Array.isArray(object1[keys1[i]]) && Array.isArray(object2[keys1[i]])) { // checks if the keys are an array
       if (eqArrays(object1[keys1[i]], object2[keys1[i]]) !== true) {
-        return false
+        return false;
       }
     
     } else if (object1[keys1[i]] !== object2[keys1[i]]) {
@@ -21,6 +20,6 @@ const eqObjects = function(object1, object2) {
     }
   }
   return results;
-}
+};
 
 module.exports = eqObjects;
