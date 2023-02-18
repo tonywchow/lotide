@@ -28,6 +28,7 @@ module.exports = countOnly;
   
 //const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
   
+
   
 //Alternate code:
 // let keys = Object.keys(itemsToCount);

@@ -31,3 +31,4 @@ module.exports = eqObjects;
 
 // const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 // console.log(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject)); // => false
+
