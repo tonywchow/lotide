@@ -1,3 +1,6 @@
+/*
+Takes in a string and returns all indices of letter positions in the string
+*/
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {//loops through the sentence
@@ -14,4 +17,4 @@ const letterPositions = function(sentence) {
 };
 
 module.exports = letterPositions;
-// console.log(letterPositions("lighthouse in the house"));
+

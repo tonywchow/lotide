@@ -1,3 +1,8 @@
+/*
+Takes in 2 objects and returns true if they are equal and false otherwise.
+
+Utilizes eqObjects to compare both the objects
+*/
 const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = function(actual, expected) {

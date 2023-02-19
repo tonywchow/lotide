@@ -27,7 +27,7 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 
-* `head(arr)`: Takes in an array and return the first element in the arry
+* `head(arr)`: Takes in an array and return the first element in the array
 
 * `tail(arr)`: Takes in an array and returns everything except the first element of the array
 

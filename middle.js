@@ -1,3 +1,6 @@
+/*
+Takes in an array and returns middle most element of the array
+*/
 const middle = function(arr) {
   let result = [];
   if (arr.length <= 2) {//If Array is less than 2 return empty array

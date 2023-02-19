@@ -1,3 +1,6 @@
+/*
+Takes in an object and a value and returns the first key that corresponds to that value
+*/
 const findKeyByValue = function(object, value) {
   let keys = Object.keys(object);
   for (let i = 0; i < keys.length; i++) {//loops through the keys of the object
@@ -8,12 +11,3 @@ const findKeyByValue = function(object, value) {
 };
   
 module.exports = findKeyByValue;
-
-//Below are the test cases:
-// const bestTVShowsByGenre = {
-//   sci_fi: "The Expanse",
-//   comedy: "Brooklyn Nine-Nine",
-//   drama:  "The Wire"
-// };
-
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");

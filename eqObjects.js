@@ -1,3 +1,6 @@
+/*
+Takes in 2 objects and return true if they are equal and false otherwise
+*/
 const eqArrays = require('./eqArrays');
 const eqObjects = function(object1, object2) {
   let keys1 = Object.keys(object1);//Keys for Object 1
@@ -14,7 +17,6 @@ const eqObjects = function(object1, object2) {
       if (eqArrays(object1[keys1[i]], object2[keys1[i]]) !== true) {
         return false;
       }
-    
     } else if (object1[keys1[i]] !== object2[keys1[i]]) {
       results = false;
     }
