@@ -1,5 +1,5 @@
 /*
-Takes in an array and returns middle most element of the array
+This function takes in an array and returns middle most element of the array
 */
 const middle = function(arr) {
   let result = [];

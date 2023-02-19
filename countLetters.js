@@ -1,5 +1,5 @@
 /*
-Takes in a string and returns a count of each of the items in the string
+This function takes in a string and returns a count of each of the items in the string
 */
 const countLetters = function(string) {
   let count = [];

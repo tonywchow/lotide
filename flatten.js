@@ -1,5 +1,5 @@
 /*
-Takes in an array that contains elements including nested array of elements and returns a flattened version of the array
+This function takes in an array that contains elements including nested array of elements and returns a flattened version of the array
 */
 const flatten = function(arr) {
   let newArr = [];

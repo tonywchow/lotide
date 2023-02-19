@@ -1,5 +1,5 @@
 /*
-Takes in an object and a value and returns the first key that corresponds to that value
+This function takes in an object and a value and returns the first key that corresponds to that value
 */
 const findKeyByValue = function(object, value) {
   let keys = Object.keys(object);
