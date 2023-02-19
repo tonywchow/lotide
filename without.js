@@ -1,17 +1,22 @@
+const assertArrayEqual = require('./assertArraysEqual')
 const without = function(source, itemsToRemove) {
-  let result = [];
-  for (let i = 0; i < source.length; i++) {//Loops through source array
+  let copyOfSource = source;//Copies the source array to manipulate
+  for (let i = 0; i < copyOfSource.length; i++) {//Loops through the copy of the source array
     for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] !== itemsToRemove[j] && typeof source[i] === typeof itemsToRemove[j]) { //Determines items to remain
-        result.push(source[i]);//pushes those items into a new array
+      if (typeof copyOfSource[i] === typeof itemsToRemove[j]) { //Determines if the item type is equal
+        if (copyOfSource[i] === itemsToRemove[j]) { //If items are equal, it will pop the item at the index
+          copyOfSource.splice(i,1)
+        }
       }
     }
   }
-  return result; //returning array
+  return copyOfSource; //returning array
 };
 
 module.exports = without;
 //Below are the test cases
-//console.log(without([1, 2, 3], [1]));
-//console.log(without(['1', '2', '3'], [1,2,'3']));
+console.log(without([1, 2, 3], [1]));
+console.log(without(['1', '2', '3'], [1,2,'3']));
+console.log(without([1, 2, 3], [4, 2])); // expected result => [1, 3]
+console.log(without([1, 2, 3], [1, 2])); //expected result => [3]
 
