@@ -1,6 +1,6 @@
 const middle = function(arr) {
   let result = [];
-  if (arr.length <= 2) {
+  if (arr.length <= 2) {//If Array is less than 2 return empty array
     return [];
   }
   if (arr.length % 2 === 0) { //checks if array length is even
